@@ -27,6 +27,10 @@ header .navbar .container .navbar-nav li a {
     padding-right: 30px;
     font-weight: 500;
 }
+header .navbar .container .navbar-nav li a:hover {
+    color: green;
+    transform: scale(1.1);
+}
 /* end header */
 
 /* staer Home */
@@ -56,6 +60,15 @@ header .navbar .container .navbar-nav li a {
 .Home .container .row .col-md-6 h1 , h3 {
     padding: 20px 0;
 }
+.Home .container .row .col-md-6 .btn:hover {
+    background-color: green;
+    border: none;
+    color: white;
+}
+.Home .container .row .col-md-6 img {
+    transform: scale(1.2);
+}
+
 /* end Home */
 
 /* start dis */
@@ -122,6 +135,15 @@ header .navbar .container .navbar-nav li a {
     margin-top: 20px;
 }
 /* end Design */
+.Driving-dynamics .container .row .card {
+    transition: .3s ease;
+}
+.Driving-dynamics .container .row .card:hover {
+    transform: scale(1.1);
+}
+.Driving-dynamics .container .row .card:hover img {
+    transform: rotate(2deg);
+}
 
 /* start PRODUCT */
 .PRODUCT {
