@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* start go */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+}
+/* end go */
+
+/* start header */
+header {
+    background-image: url(img/Background.png);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .navbar .container .navbar-brand img {
+    width: 60px;
+}
+header .navbar .container .navbar-nav li a {
+    color: white;
+    font-size: 19px;
+    padding-right: 30px;
+    font-weight: 500;
+}
+/* end header */
+
+/* staer Home */
+.Home {
+    margin-top: -89px;
+    display: flex;
+    align-items: center;
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 101vh;
+}
+.Home .container .row .col-md-6 {
+    color: aliceblue;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.Home .container .row .col-md-6 span:nth-child(1) {
+    color: #0066b1;
+}
+.Home .container .row .col-md-6 span:nth-child(2) {
+    color: #003d78;
+}
+.Home .container .row .col-md-6 span:nth-child(3) {
+    color: #e22718;
+}
+.Home .container .row .col-md-6 h1 , h3 {
+    padding: 20px 0;
+}
+/* end Home */
+
+/* start dis */
+.dis .container .row .col-md-12  {
+    margin-top: 30px;
+}
+.dis .container .row .col-md-12 h1 {
+    word-spacing: 2px ;
+    letter-spacing: 2px ;
+}
+.dis .container .row .col-md-12 p {
+    font-size: 17px;
+    color: #999;
+}
+/* end dis */
+
+/* start Design */
+.Design .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+.Design h1 {
+    margin-left: 120px;
+}
+.Design .btn-group {
+    margin-top: 10px;
+}
+.Design .design-options {
+    width: 100%;
+}
+.Design .container  .options-btn .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-bottom: 4px solid black;
+}
+
+.Design .container .options-btn .btn-outline-primary {
+    --bs-btn-color: black;
+    border: none;
+}
+.Design .container .col-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Design .container .col-btn .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+    border: 4px black solid;
+}
+.Design .container .col-btn .btn-group img {
+    width: 70%;
+}
+.Design .container p {
+    font-size: 20px;
+    color: #888;
+    font-weight: 700;
+    margin-top: 20px;
+}
+/* end Design */
+
+/* start PRODUCT */
+.PRODUCT {
+    margin-top: 50px;
+}
+.PRODUCT h1 {
+    margin-bottom: 40px;
+    color: black;
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.PRODUCT p {
+    color: #777;
+    font-weight: 400;
+}
+/* end PRODUCT */
+.PREVIEWS #carouselExampleFade img{
+    height: 800px;
+}
+/* start footer */
+footer {
+    margin-top: 50px;
+    background-color: #f6f6f6;
+    width: 100%;
+}
+footer .row1 {
+    padding-left: 0;
+    padding: 80px;
+    width: 100%;
+}
+footer .row p {
+    font-size: 19px;
+    color: #777;
+}
+footer .row a {
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+    color: black;
+    font-weight: 500;
+}
+footer .row .col-12 a{
+    font-size: 25px;
+    padding: 0 10px;
+    display: inline;
+}
+footer .row2 {
+    padding: 20px 0;
+    padding-left: 100px;
+    background-color: white;
+    width: 100%;
+}
+footer .row2 .col-6 a {
+    display: inline;
+    font-size: 15px;
+    padding: 5px;
+}
+/* end footer */
+
+/* mobile style edit */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        height: 265px;
+        padding-top: 5px;
+        padding-left: 20px;
+        transition: .5s ease-in-out all;
+    }
+    .Home .container .row .col-md-6 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .Home .container .row .col-md-6 img {
+        width: 90%;
+
+    }
+    .Design .container .col-btn .btn-group img {
+        width: 40%;
+    }
+    .Design .container .col-btn .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+        width: fit-content;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Design .container .options-btn .btn-outline-primary {
+        font-size: 15px;
+    }
+    .PREVIEWS #carouselExampleFade img{
+        width: 100%;
+        height: 100%;
+    }
+    footer .row1 {
+        padding: 40px;
+    }
+    footer .row1 p {
+        font-size: 15px;
+    }
+    footer .row .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+    footer .row2 {
+        padding: 10px 0;
+        padding-left: 20px;
+    }
+    footer .row2 p{
+        font-size: 19px;
+        width: 200%;
+        text-align: center;
+    }
+    footer .row2 .col-6 a {
+        display: none;
+    }
+}
+/* mobile style edit */
